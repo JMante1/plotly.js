@@ -1060,4 +1060,5 @@ module.exports = function(gd, svg, calcData, layout, callbacks) {
         .ease(c.ease).duration(c.duration)
         .attr('startOffset', nodeTextOffset)
         .style('fill', nodeTextColor);
+        .call(svgTextUtils.convertToTspans, gd);
 };
